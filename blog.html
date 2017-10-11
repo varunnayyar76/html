@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/blog.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+			 $(window).scroll(function() {   
+				var scroll = $(window).scrollTop();
+
+				if (scroll >= 2) {
+					$(".blog-header").addClass("fixed");
+				} else {
+					$(".blog-header").removeClass("fixed");
+				}
+			});
+			$(document).ready(function(){
+				$(".mobile-burger").click(function(){
+					$(".mobile-menu").addClass("open");
+				})
+				$(".mobile-menu-close").click(function(){
+					$(".mobile-menu").removeClass("open");
+				})
+			})
+		</script>
+		
+        <title>blog</title>
+	<body>
+		<div class="free-trial">
+			<p>Free Trial! Use Coupon code: FREETRIAL</p>
+		</div>
+		<header class="blog-header">
+			<div class="header-logo">
+				<div class="mobile-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<a href="#">
+					<img alt="Header logo" src="img/logo.png">
+				</a>
+			</div>
+			<div class="header-links">
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+			</div>
+			<div class="header-cart">
+				<img alt="Header cart icon" src="img/cart.jpg">
+				<div class="header-cart-counter-cont">
+					<span class="header-cart-counter">0</span>
+				</div>
+			</div>
+		</header>
+		<section class="bannertxt">
+			<div class="wrapper">
+				<div class="recipes">
+					<span>recipes</span>
+				</div>
+				<div class="homehony">
+					<span>homemade honey <br/>facial mask</span>
+				</div>
+				<div class="btnreadmore">
+					<a href="#">Read More</a>
+				</div>
+				<div class="icons-block">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-instagram"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-pinterest "></a>
+				</div>
+				<div class="dateblock">
+					septempber 22, 2017
+				</div>
+			</div>
+		</section>
+		<section class="popularcat">
+			<div class="wrapper">
+				<h2>popular categories</h2>
+				<div class="popularcat-outer">
+					<div class="popularblk1">
+						<img src="img/pl1.jpg" />
+						<span>pecipes</span>
+					</div>
+					<div class="popularblk1">
+						<img src="img/pl2.jpg" />
+						<span>life</span>
+					</div>
+					<div class="popularblk1">
+						<img src="img/pl3.jpg" />
+						<span>food</span>
+					</div>
+					<div class="popularblk1">
+						<img src="img/pl4.jpg" />
+						<span>skin hacks</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="foodsction">
+			<div class="foodhalf">
+				<img src="img/h1.jpg" />
+			</div>
+			<div class="foodhalf foodsectiontxt">
+				<div class="recipes">
+					<span>food</span>
+				</div>
+				<div class="homehony">
+					<span>5 best foods for your skin</span>
+				</div>
+				<div class="foodpara">
+					<p>The top best food for your skin might surpriseyou. Take these out of your diet to stop...</p>
+				</div>
+				<div class="btnreadmore">
+					<a href="#">Read More</a>
+				</div>
+			</div>
+		</section>
+		<section class="foodsction">
+			<div class="foodhalf foodsectiontxt">
+				<div class="recipes">
+					<span>Life</span>
+				</div>
+				<div class="homehony">
+					<span>10 ways to reduce stress</span>
+				</div>
+				<div class="foodpara">
+					<p>Stress us one of the quickest ways to age. Reducing it will help slow down how...	</p>
+				</div>
+				<div class="btnreadmore">
+					<a href="#">Read More</a>
+				</div>
+			</div>
+			<div class="foodhalf">
+				<img src="img/h2.jpg" />
+			</div>
+		</section>
+		<footer id="footer">
+		<div class="footer-links">
+			<ul>
+				<li><a href="/store">Store</a></li>
+				<li><a href="/about">Our Story</a></li>
+				<li><a href="/help">Help</a></li>
+			</ul>
+			<ul>
+				<li><a href="tel:1-888-315-7559">
+					<span class="footer-icon"><img alt="Footer phone" src="img/phone.jpg"></span>1-888-315-7559</a><br><span class="footer-support-hours"><br>8 AM - 7 PM CST</span>
+				</li>
+				<li><a class="footer-email" hr>
+					<span class="footer-icon"><img alt="Footer email" src="img/mail.jpg"></span>Help@NaturelySkinCare.com</a>
+				</li>
+				<li>1108 Lavaca St Suite 110, #173<br>Austin, TX 78701</li>		
+			</ul>
+		</div>
+		<div class="copyright">&copy; 2017 Naturely. All rights reserved. &nbsp;|&nbsp; <a href="/privacy">Privacy</a> &nbsp;|&nbsp; <a href="/terms">Terms of Service</a></div>
+	</footer>
+	<!--moblie menu-->
+	<div class="mobile-menu">
+			<div class="mobile-menu-header">
+				<div class="mobile-menu-logo"><a href="/">
+				<img alt="Header logo" src="img/logo.png"></a></div>
+				<div class="mobile-menu-close">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="mobile-menu-links">
+				<ul>
+					<li><a href="/about">About</a></li>
+					<li><a href="/products">Shop</a></li>
+					<li><a href="/help">Help</a></li>
+				</ul>
+			</div>
+		</div>
+	<!--moblie menu-->
+	</body>
+</html>
